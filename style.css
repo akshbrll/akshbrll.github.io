@@ -1,0 +1,165 @@
+html{
+  height: 100%;
+}
+
+h1{
+  color: black;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  
+  font-family: 'Questrial','sans-serif';
+  color: white;
+  list-style-type: none;
+  align-items: center;
+}
+
+.container{
+ margin: auto;
+}
+
+.box{
+  position: fixed;
+  display: flex;
+  padding-top: 1%;
+  width: 100%;
+  justify-content: center; 
+  background-color: rgba(255,255, 255, 0.2);
+  
+}
+
+.navbar{
+  position: relative;
+  border-bottom: rgb(143, 143, 143) solid 1px;
+  padding: 0% 2%;
+  padding-bottom: 0.25%;
+  display: flex;
+  width: 25%;
+  
+  justify-content: space-between;
+  
+  align-items: center;
+}
+.navbar a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.navbar a[id="heading"]{
+  color: black;  
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: 28px;
+  
+}
+
+.navbar a[id="about"]{
+  color: rgb(255, 184, 29);
+}
+
+.navbar a:hover{
+  color: #9c9c9c;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  animation: lh 0.7s ease-in;
+}
+
+.navbar a[id="about"]:hover{
+  cursor: pointer;
+  color: #5dccff;
+  border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  animation: ah 0.7s ease-in;
+}
+
+.navbar a[id="heading"]:hover{
+  cursor: pointer;
+  border-bottom: 2px rgb(19,19,19) solid;
+  animation: hd 0.7s ease-in;
+  
+}  
+
+@keyframes hd{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0,0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgb(19, 19, 19) solid;
+  }
+}
+
+@keyframes lh{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;  
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;  
+  }
+}
+
+@keyframes ah{
+  0%{
+    border-bottom: 2px rgba(0, 0, 0, 0) solid;
+  }
+
+  100%{
+    border-bottom: 2px rgba(0, 0, 0, 0.3) solid;
+  }
+}
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  border-bottom: rgb(143, 143, 143) solid 1px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+
+#pfp{
+  position: relative;
+  margin-top: 10%;;
+  border-radius: 50%;  
+  object-fit: cover;
+  width: 40%;
+  right: 5%;
+  z-index: -1;
+  -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+}
+
+.introtext{
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1{
+  color: orange;
+}
+
+.intro h2{
+  color: rgb(0, 0, 0);
+}
+
+.projects{
+  display: flex;
+  justify-content: center;
+}
+
+.projects h1{
+padding: 1% 1%;
+
+border-radius: 5%;
+}
+
+.projects li{
+  
+  text-decoration: none;
+}
