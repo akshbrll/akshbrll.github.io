@@ -161,10 +161,19 @@ border-radius: 5%;
   border-top: rgb(143, 143, 143) solid 1px;
   margin-left: 3%;
   margin-right: 3%;
+  display: flex;
+  
+  align-items: center;
+  
 
 }
 
 .footer a{
   text-decoration: none;
+  margin-left: 2%;
   color: rgb(0, 0, 0);
+}
+
+.footer li{
+  margin-left: 3%;
 }
