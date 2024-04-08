@@ -21,7 +21,9 @@ body{
 }
 
 .box{
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   display: flex;
   padding-top: 1%;
   width: 100%;
@@ -30,14 +32,17 @@ body{
   
 }
 
+
 .navbar{
   position: relative;
+  width: 100%;
+  margin-left: 33%;
+  margin-right: 33%;
   border-bottom: rgb(143, 143, 143) solid 1px;
   padding: 0% 2%;
   padding-bottom: 0.25%;
   display: flex;
-  width: 25%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -79,6 +84,34 @@ body{
   
 }  
 
+@media only screen and (max-width: 767.96px) {
+  a{
+    font-size: 13px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  a{
+    font-size: 9px;
+    line-height: 1.2rem;
+  }
+
+}@media only screen and (max-width: 767.96px) {
+  #heading{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  #heading{
+    font-size: 13px;
+    line-height: 1.2rem;
+  }
+}
+
+
 @keyframes hd{
   0%{
     border-bottom: 2px rgba(0, 0, 0,0) solid;
@@ -116,22 +149,40 @@ body{
   border-bottom: rgb(143, 143, 143) solid 1px;
   margin-left: 3%;
   margin-right: 3%;
+  position: relative;
 }
 
 
 
-#pfp{
+.intro img{
+  width: 500px;
   position: relative;
   margin-top: 10%;;
   border-radius: 50%;  
   object-fit: cover;
-  width: 40%;
   right: 5%;
   z-index: -1;
   -moz-user-select: none;
--webkit-user-select: none;
-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+@media only screen and (max-width: 767.96px) {
+  .intro img{
+    width: 300px;
+    line-height: 25px;
+    animation:  3s ease-in;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  .intro img {
+    width: 150px;
+    line-height: 1.2rem;
+  }
+}
+
+
 
 .introtext{
   display: flex;
@@ -162,18 +213,64 @@ border-radius: 5%;
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
-  
   align-items: center;
-  
+}
 
+.footer h1{
+  margin-left: 2%;
 }
 
 .footer a{
-  text-decoration: none;
-  margin-left: 2%;
+  
+  
+  text-decoration: none;  
   color: rgb(0, 0, 0);
 }
 
-.footer li{
-  margin-left: 3%;
+.handles{
+  display: flex;
+}
+
+.handles li{
+  
+  margin-left: 20%;
+  border-right: #cacaca solid 1px;
+  padding-right: 10%;
+}
+
+#email{
+  margin-left: 300%;
+}
+
+.footer a:hover{
+  color: #9c9c9c;
+  
+}
+
+@media only screen and (max-width: 767.96px) {
+  h1{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  h1{
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 767.96px) {
+  h2{
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 575.96px) {
+  h2{
+    font-size: 10px;
+    line-height: 1.2rem;
+  }
 }
