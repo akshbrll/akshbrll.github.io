@@ -211,6 +211,8 @@ body{
 .projects{
   display: flex;
   justify-content: center;
+  min-height: 100vh;
+
 }
 
 .projects h1{
@@ -225,6 +227,8 @@ border-radius: 5%;
   margin-right: 3%;
   display: flex;
   align-items: center;
+  min-height: 10%;
+  max-height: 10%;
 }
 
 .footer h1{
